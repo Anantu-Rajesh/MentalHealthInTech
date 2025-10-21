@@ -1,12 +1,11 @@
 # Mental Health in Tech Predictor
 
+A **machine learning web application** that predicts whether someone may seek mental health treatment based on workplace and personal factors.  
+Built with **Python, Streamlit, and Scikit-learn**, using a **Random Forest Classifier** achieving approximately **80.9% accuracy**.
 
+---
 
-A machine learning web application that predicts whether someone may seek mental health treatment based on workplace and personal factors. Built with Python, Streamlit, and Scikit-learn, using a Random Forest Classifier (≈80.9% accuracy).
-
-
-
-## Quick Start
+## 🚀 Quick Start
 
 
 
@@ -22,7 +21,7 @@ cd mental_health_in_tech
 
 
 
-### 2. Create and activate virtual environment### Prerequisites### Prerequisites
+### 2. Create and activate virtual environment
 
 ```bash
 
@@ -46,31 +45,31 @@ source venv/bin/activate### Installation & Setup### Installation & Setup
 
 ### 3. Install dependencies
 
-```bash1. **Clone or download this project**1. **Clone or download this project**
+```bash
 
 pip install -r requirements.txt
 
-```   ```bash   ```bash
+```  
 
 
 
-### 4. Run the app   cd mental_health_in_tech   cd mental_health_in_tech
+### 4. Run the app   
 
 ```bash
 
-streamlit run app.py   ```   ```
+streamlit run app.py 
 
 ```
 
 
 
-App will open automatically at http://localhost:8501
+App will open automatically at `http://localhost:8501`
 
+---
 
+## 🧩 Project Overview
 
-## Project Overview
-
-   ```bash   ```bash
+   ```bash   
 
 - Predicts likelihood of seeking mental health treatment using workplace and personal data
 
@@ -82,29 +81,31 @@ App will open automatically at http://localhost:8501
 
 - Works entirely offline — no data storage or tracking
 
-      
+ ```     
 
-## Project Structure
+---
 
-```
+## 📁 Project Structure
 
-mental_health_in_tech/   # On Windows:   # On Windows:
+```bash
+
+mental_health_in_tech/   
 
 │
 
-├── app.py                     # Main Streamlit application   venv\Scripts\activate   venv\Scripts\activate
+├── app.py                     # Main Streamlit application   
 
 ├── model.py                   # ML model and preprocessing logic
 
-├── requirements.txt            # Python dependencies   # On macOS/Linux:   # On macOS/Linux:
+├── requirements.txt            # Python dependencies  
 
 ├── mental_health_model.pkl     # Trained model (auto-generated)
 
-├── survey.csv                  # Training dataset (1,261 responses)   source venv/bin/activate   source venv/bin/activate
+├── survey.csv                  # Training dataset (1,261 responses)   
 
 ├── run_app.bat                 # Windows start script
 
-├── stop_app.bat                # Windows stop script   ```   ```
+├── stop_app.bat                # Windows stop script   
 
 ├── PROJECT_SUMMARY.md          # Technical documentation
 
@@ -112,19 +113,19 @@ mental_health_in_tech/   # On Windows:   # On Windows:
 
 ├── venv/                       # Virtual environment
 
-└── README.md                   # Project documentation3. **Install dependencies**3. **Install dependencies**
+└── README.md                   # Project documentation
 
 ```
 
-   ```bash   ```bash
+---   
 
-## Technical Details
+## ⚙️ Technical Details
 
 
 
 - **Model**: Random Forest Classifier
 
-- **Accuracy**: ~80.95%   ```   ```
+- **Accuracy**: ~80.95%   
 
 - **Libraries**: Scikit-learn, Pandas, NumPy, Streamlit
 
@@ -136,37 +137,47 @@ mental_health_in_tech/   # On Windows:   # On Windows:
 
 
 
-See `mental_health_final.ipynb` for detailed analysis and model development.   ```bash   ```bash
+See `mental_health_final.ipynb` for detailed analysis and model development.   
+
+---
+
+## 💡 Features
 
 
 
-## Future Improvements   
+- Real-time predictions with confidence scores.
+
+- Clean, responsive web interface (using Streamlit)
+
+- Educational insights and recommendations
+
+- Offline functionality  (no API calls or data uploads)
+
+- Lightweight setup, runs locally within minutes
+
+---
+
+## 🔧 Future Improvements   
 
 
 
-- Integration of newer survey datasets   ```   ```
-
-- Comparison with advanced models (XGBoost, SVM)
+- Integration of newer survey datasets   
 
 - Enhanced feature engineering and UI design
 
 - Multi-language support
 
+---
 
-
-## Disclaimer
+## ⚠️ Disclaimer
    
 
-This project is for educational and research purposes only. It does not provide medical advice or professional diagnosis.
+
+- This project is for educational purposes only. 
+- It does not provide medical advice or professional diagnosis.
+- Developed to promote awareness of mental health in the tech industry through data-driven insights.
 
 
 
-Developed to promote awareness of mental health in the tech industry through data-driven insights.
-
-
-Mental Health in Tech Predictor
-Machine Learning Application for Workplace Mental Health Assessment
-Based on OSMI Mental Health in Tech Survey Data (2014)
-Implementation: Python, Scikit-learn, Streamlit
 ```
 
