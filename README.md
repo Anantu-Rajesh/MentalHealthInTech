@@ -13,7 +13,7 @@ Built with **Python, Streamlit, and Scikit-learn**, using a **Random Forest Clas
 
 ```bash
 
-git clone https://github.com/yourusername/mental_health_in_tech.git## 🚀 Quick Start## 🚀 Quick Start
+git clone https://github.com/yourusername/mental_health_in_tech.git
 
 cd mental_health_in_tech
 
@@ -25,19 +25,17 @@ cd mental_health_in_tech
 
 ```bash
 
-python -m venv venv- Python 3.8 or higher- Python 3.8 or higher
+# Windows
 
-
-
-# Windows- pip (Python package installer)- pip (Python package installer)
-
+python -m venv venv
 venv\Scripts\activate
 
 
 
 # macOS/Linux
 
-source venv/bin/activate### Installation & Setup### Installation & Setup
+python3 -m venv venv
+source venv/bin/activate
 
 ```
 
@@ -69,19 +67,19 @@ App will open automatically at `http://localhost:8501`
 
 ## 🧩 Project Overview
 
-   ```bash   
+ 
 
 - Predicts likelihood of seeking mental health treatment using workplace and personal data
 
-- Built on OSMI Mental Health in Tech Survey (2014)  
+- Built on **OSMI Mental Health in Tech Survey**  
 
-- Features 22 engineered inputs from 1,200+ responses
+- Features **22 engineered inputs from 1,200+ responses**
 
 - Provides probability-based predictions and recommendations   
 
 - Works entirely offline — no data storage or tracking
 
- ```     
+     
 
 ---
 
@@ -179,5 +177,5 @@ See `mental_health_final.ipynb` for detailed analysis and model development.
 
 
 
-```
+
 
