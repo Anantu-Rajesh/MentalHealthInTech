@@ -13,7 +13,7 @@ Built with **Python, Streamlit, and Scikit-learn**, using a **Random Forest Clas
 
 ```bash
 
-git clone https://github.com/yourusername/mental_health_in_tech.git
+git clone https://github.com/Anantu-Rajesh/MentalHealthInTech.git
 
 cd mental_health_in_tech
 
