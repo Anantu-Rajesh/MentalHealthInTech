@@ -1,122 +1,106 @@
-# Technical Documentation: Mental Health in Tech Predictor# Technical Documentation: Mental Health in Tech Predictor
+# Technical Documentation: Mental Health in Tech Predictor
 
 
 
-## 🎯 Project Overview## 🎯 Project Overview
+## 🎯 Project Overview
 
 
 
-A production-ready machine learning web application that predicts mental health treatment likelihood based on workplace factors. Achieves 80.95% accuracy matching the original Jupyter notebook analysis.A production-ready machine learning web application that predicts mental health treatment likelihood based on workplace factors. Achieves 80.95% accuracy matching the original Jupyter notebook analysis.
+A production-ready machine learning web application that predicts mental health treatment likelihood based on workplace factors. Achieves 80.95% accuracy matching the original Jupyter notebook analysis.
 
 
 
-## 🏗️ Architecture## 🏗️ Architecture
+## 🏗️ Architecture
 
 
 
-### Core Components### Core Components
+### Core Components
 
-1. **`model.py`** - ML pipeline with exact notebook replication1. **`model.py`** - ML pipeline with exact notebook replication
+1. **`model.py`** - ML pipeline with exact notebook replication
 
-2. **`app.py`** - Streamlit web interface (simplified single-page design)2. **`app.py`** - Streamlit web interface (simplified single-page design)
+2. **`app.py`** - Streamlit web interface (simplified single-page design)
 
-3. **`survey.csv`** - Training dataset (1,261 tech worker responses)3. **`survey.csv`** - Training dataset (1,261 tech worker responses)
+3. **`survey.csv`** - Training dataset (1,261 tech worker responses)
 
-4. **`mental_health_final (1).ipynb`** - Original research analysis4. **`mental_health_final (1).ipynb`** - Original research analysis
-
-
-
-### Technical Stack### Technical Stack
-
-- **Backend**: Python 3.8+, scikit-learn, pandas, numpy- **Backend**: Python 3.8+, scikit-learn, pandas, numpy
-
-- **Frontend**: Streamlit with custom CSS styling- **Frontend**: Streamlit with custom CSS styling
-
-- **Model**: Random Forest Classifier (n_estimators=100, random_state=42)- **Model**: Random Forest Classifier (n_estimators=100, random_state=42)
-
-- **Environment**: Isolated virtual environment with pip dependencies- **Environment**: Isolated virtual environment with pip dependencies
+4. **`mental_health_final (1).ipynb`** - Original research analysis
 
 
 
-## 🔬 Model Performance Validation## 🔬 Model Performance Validation
+### Technical Stack
+
+- **Backend**: Python 3.8+, scikit-learn, pandas, numpy
+
+- **Frontend**: Streamlit with custom CSS styling
+
+- **Model**: Random Forest Classifier (n_estimators=100, random_state=42)
+
+- **Environment**: Isolated virtual environment with pip dependencies
 
 
 
-### Exact Notebook Replication### Exact Notebook Replication
-
-- **Critical Discovery**: Notebook used single LabelEncoder instance for all categorical features- **Critical Discovery**: Notebook used single LabelEncoder instance for all categorical features
-
-- **Implementation**: Replicated exact preprocessing logic in `model.py`- **Implementation**: Replicated exact preprocessing logic in `model.py`
-
-- **Result**: Perfect accuracy match (80.95% vs 80.95%)- **Result**: Perfect accuracy match (80.95% vs 80.95%)
-
-
-
-### Performance Metrics### Performance Metrics
+### Performance Metrics
 
 ``````
 
-Accuracy: 80.95%Accuracy: 80.95%
+Accuracy: 80.95%
 
-Recall: 78.91%Recall: 78.91%
+Recall: 78.91%
 
-F1-Score: 80.80%F1-Score: 80.80%
+F1-Score: 80.80%
 
-ROC-AUC: 85.21%ROC-AUC: 85.21%
+ROC-AUC: 85.21%
 
 ``````
 
 
 
-### Feature Engineering### Feature Engineering
+### Feature Engineering
 
-- 22 engineered features from 27 original survey columns- 22 engineered features from 27 original survey columns
-
-- Single LabelEncoder for consistent categorical encoding- Single LabelEncoder for consistent categorical encoding
-
-- Train-test split: random_state=39 for reproducibility- Train-test split: random_state=39 for reproducibility
+- 22 engineered features from 27 original survey columns
+- Single LabelEncoder for consistent categorical encoding
+- Train-test split: random_state=39 for reproducibility
 
 
 
-## 🖥️ User Interface Evolution## 🖥️ User Interface Evolution
+## 🖥️ User Interface Evolution
 
 
 
-### Initial Implementation### Initial Implementation
+### Initial Implementation
 
-- Multi-page Streamlit app with navigation sidebar- Multi-page Streamlit app with navigation sidebar
+- Multi-page Streamlit app with navigation sidebar
 
-- Data analysis, model performance, and prediction pages- Data analysis, model performance, and prediction pages
+- Data analysis, model performance, and prediction pages
 
-- Complex feature exploration and visualization tools- Complex feature exploration and visualization tools
-
-
-
-### User-Driven Simplification### User-Driven Simplification
-
-- Simplified to single-page prediction interface- Simplified to single-page prediction interface
-
-- Direct age number input (replaced radio buttons)- Direct age number input (replaced radio buttons)
-
-- High contrast colors for accessibility (#1b5e20, #2e7d32)- High contrast colors for accessibility (#1b5e20, #2e7d32)
-
-- Personalized mental health improvement suggestions- Personalized mental health improvement suggestions
-
-- Emergency resources and professional guidance- Emergency resources and professional guidance
+- Complex feature exploration and visualization tools
 
 
 
-## 🛠️ Development Workflow## 🛠️ Development Workflow
+### User-Driven Simplification
 
-  - numpy (numerical computing)
+- Simplified to single-page prediction interface
 
-### Setup & Configuration  - scikit-learn (machine learning)
+- Direct age number input (replaced radio buttons)
 
-1. Virtual environment creation and dependency management  - matplotlib & seaborn (visualization)
+- High contrast colors for accessibility (#1b5e20, #2e7d32)
 
-2. Model extraction from Jupyter notebook analysis  - plotly (interactive charts)
+- Personalized mental health improvement suggestions
 
-3. Streamlit application development and testing  - joblib (model persistence)
+- Emergency resources and professional guidance
+
+
+
+## 🛠️ Development Workflow
+
+  
+
+### Setup & Configuration 
+
+1. Virtual environment creation and dependency management  
+
+2. Model extraction from Jupyter notebook analysis 
+
+3. Streamlit application development and testing  
 
 4. Performance optimization and exact notebook matching
 
@@ -152,7 +136,7 @@ ROC-AUC: 85.21%ROC-AUC: 85.21%
 
 ### Core Files- Clean, single-page interface with organized form sections
 
-```- Flexible age input (slider or text input options)
+```
 
 ├── app.py                          # Streamlit web application- All 22 prediction features with appropriate input types
 
@@ -207,12 +191,14 @@ joblib==1.3.2cd "C:\Users\deepa rajesh\OneDrive\Desktop\mental_health_in_tech"
 ```
 
 # 2. Activate virtual environment
+venv\Scripts\activate
+# 3. Run Streamlit app
 
-## 🚀 Deployment & Usagevenv\Scripts\activate
+## 🚀 Deployment & Usage
 
 
 
-### Local Development# 3. Run Streamlit app
+### Local Development
 
 ```bashstreamlit run app.py
 
@@ -316,9 +302,11 @@ streamlit run app.py
 
 2. **Maintainability**: Modular code structure, clear documentationmental_health_in_tech/
 
-3. **Usability**: User-centered design, accessibility considerations├── 📱 app.py                    # Main Streamlit application
+3. **Usability**: User-centered design, accessibility considerations
+├── 📱 app.py                    # Main Streamlit application
 
-4. **Professional Standards**: Git-ready repository, comprehensive README├── 🤖 model.py                  # ML model and preprocessing
+4. **Professional Standards**: Git-ready repository, comprehensive README
+├── 🤖 model.py                  # ML model and preprocessing
 
 ├── 📊 survey.csv                # Training dataset  
 
@@ -326,7 +314,8 @@ streamlit run app.py
 
 ├── 🎯 mental_health_model.pkl   # Trained model
 
-**Project Status**: ✅ **Complete** - Production-ready application with exact notebook performance match and user-friendly interface.├── 📋 requirements.txt          # Dependencies
+**Project Status**: ✅ **Complete** - Production-ready application with exact notebook performance match and user-friendly interface.
+├── 📋 requirements.txt          # Dependencies
 
 ├── 📖 README.md                 # Documentation
 
@@ -338,5 +327,3 @@ streamlit run app.py
 
 ---
 
-**🎉 Project Successfully Completed!**  
-*Ready for demonstration and use*
